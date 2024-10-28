@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="hasil"></p>
+    <p id="hasil_perkalian"></p>
+    <p id="hasil_pembagian"></p>
+    <p id="hasil_pengurangan"></p>
+
+    <script>
+        // Fungsi untuk menjumlahkan
+        function tambah(a, b) {
+            return a + b;
+        }
+        let hasil = tambah(5, 3);
+        console.log(hasil);
+
+        // Fungsi untuk perkalian
+        function kali(a, b) {
+            return a * b;
+        }
+        let hasil_perkalian = kali(5, 3);
+        console.log(hasil_perkalian);
+
+        // Fungsi untuk pembaguan
+        function bagi(a, b) {
+            return a / b;
+        }
+        let hasil_pembagian = bagi(5, 3);
+        console.log(hasil_pembagian);
+
+        // Fungsi untuk perkalian
+        function kurang(a, b) {
+            return a - b;
+        }
+        let hasil_pengurangan = kurang(5, 3);
+        console.log(hasil_pengurangan);
+        
+        // Menampilkan hasil di dalam elemen <p> dengan id "hasil"
+        document.getElementById("hasil").innerHTML = "Hasil penjumlahan: " + hasil;
+
+        document.getElementById("hasil_perkalian").innerHTML = "Hasil perkalian: " + hasil_perkalian;
+
+        document.getElementById("hasil_pembagian").innerHTML = "Hasil pembagian: " + hasil_pembagian;
+
+        document.getElementById("hasil_pengurangan").innerHTML = "Hasil pengurangan: " + hasil_pengurangan;
+    </script>
+</body>
+
+</html>

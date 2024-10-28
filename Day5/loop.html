@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Perulangan</title>
+</head>
+<body>
+
+<h2>Contoh Perulangan dengan For, While, dan Do...While Loop</h2>
+
+<!-- Tombol untuk menjalankan perulangan -->
+<button onclick="tampilkanFor()">Jalankan For Loop (1-5)</button>
+<button onclick="tampilkanWhile()">Jalankan While Loop (6-10)</button>
+<button onclick="tampilkanDoWhile()">Jalankan Do...While Loop (11-15)</button>
+
+<!-- Tempat menampilkan hasil dari setiap loop -->
+<h3>Hasil For Loop:</h3>
+<p id="hasilFor"></p>
+
+<h3>Hasil While Loop:</h3>
+<p id="hasilWhile"></p>
+
+<h3>Hasil Do...While Loop:</h3>
+<p id="hasilDoWhile"></p>
+
+<script>
+    // Fungsi untuk For Loop (menampilkan angka 1-5)
+    function tampilkanFor() {
+        var hasil = "";
+        for (var i = 1; i <= 5; i++) {
+            hasil += i + " "; // Menggabungkan angka dengan spasi
+        }
+        document.getElementById("hasilFor").innerHTML = hasil;
+    }
+
+    // Fungsi untuk While Loop (menampilkan angka 6-10)
+    function tampilkanWhile() {
+        var hasil = "";
+        var i = 6;
+        while (i <= 10) {
+            hasil += i + " "; // Menggabungkan angka dengan spasi
+            i++; 
+        }
+        document.getElementById("hasilWhile").innerHTML = hasil;
+    }
+
+    // Fungsi untuk Do...While Loop (menampilkan angka 11-15)
+    function tampilkanDoWhile() {
+        var hasil = "";
+        var i = 11;
+        do {
+            hasil += i + " "; // Menggabungkan angka dengan spasi
+            i++; 
+        } while (i <= 15);
+        document.getElementById("hasilDoWhile").innerHTML = hasil;
+    }
+</script>
+
+</body>
+</html>

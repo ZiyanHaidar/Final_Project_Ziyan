@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Variabel JavaScript</title>
+</head>
+
+<body>
+    <h1>Belajar Variabel JavaScript</h1>
+    <p id="hasil"></p>
+
+    <script>
+        var email = "Avechina@gmail.com";
+        console.log("Email : " + email);
+
+
+        let umur = 17;
+        console.log("Umur : " + umur);
+
+
+        const sekolah = "SMK Bina Nusantara Demak";
+        console.log("Sekolah  " + sekolah);
+
+        // Menampilkan hasil pada elemen HTML
+        document.getElementById("hasil").innerHTML =
+            "Email : " + email + "<br>" +
+            "Umur : " + umur + "<br>" +
+            "Sekolah : " + sekolah;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.foto{
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+}

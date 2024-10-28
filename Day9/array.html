@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Array</title>
+</head>
+<body onload="tampilkanArray()">
+    <h1>Contoh Array di JavaScript</h1>
+    <p id="pertama"></p>
+    <p id="kedua"></p>
+    <p id="hapus"></p>
+    <p id="hapusPertama"></p>
+    <p id="panjang"></p>
+    <p id="semuaHEWAN"></p>
+    <script>
+        function tampilkanArray() {
+            // Membuat array sederhana berisi nama-nama HEWAN
+            var HEWAN = ["Tanjung", "Tanjung", "Tanjung", "Tanjung", "Tanjung", "Tanjung", "Tanjung", "Tanjung"];
+            // Mengakses elemen dari array
+            document.getElementById("pertama").innerHTML = "HEWAN pertama: " + HEWAN[0];
+            document.getElementById("kedua").innerHTML = "HEWAN kedua: " + HEWAN[2];
+            // Menambahkan HEWAN baru ke array
+            HEWAN.push("Tanjung", "Tanjung");
+            // Menghapus HEWAN terakhir dari array menggunakan pop
+            var HEWANTerakhir = HEWAN.pop();
+            // Menghapus HEWAN pertama dari array menggunakan pop
+            var HEWANPertama = HEWAN.shift();
+            // Menampilkan hasil setelah menghapus HEWAN terakhir
+            document.getElementById("hapus").innerHTML = "HEWAN terakhir yang dihapus: " + HEWANTerakhir;
+            // Menampilkan hasil setelah menghapus HEWAN pertama
+            document.getElementById("hapusPertama").innerHTML = "HEWAN pertama yang dihapus: " + HEWANPertama;
+            // Menampilkan panjang array dan semua elemennya
+            document.getElementById("panjang").innerHTML = "Total HEWAN setelah penghapusan: " + HEWAN.length;
+            document.getElementById("semuaHEWAN").innerHTML = "Semua HEWAN: " + HEWAN.join(", ");
+        }
+    </script>
+</body>
+
+</html>

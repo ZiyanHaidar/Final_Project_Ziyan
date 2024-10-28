@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling onsubmit</title>
+
+</head>
+
+<body>
+    <h2>Formulir Pendaftaran</h2>
+
+    <!-- Form dengan event onsubmit -->
+    <form onsubmit="return validasiForm()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <br><br>
+        <input type="submit" value="Kirim">
+    </form>
+
+    <script>
+        // Fungsi validasi form
+        function validasiForm() {
+            let nama = document.getElementById("nama").value;
+
+            // Jika input nama kosong, tampilkan pesan dan cegah pengiriman form
+            if (nama === "") {
+                alert("Nama harus diisi!");
+                return false; // Menghentikan pengiriman form
+            }
+
+            // Jika nama diisi, tampilkan alert sesuai nama yang diinput
+            alert("Selamat datang, " + nama + "!");
+            return true; // Melanjutkan pengiriman form
+        }
+    </script>
+</body>
+
+</html>
